@@ -18,13 +18,14 @@
 
 # 2 Orb
 ## 2.1 2026/10/19
-- [ ]  轨道态波函数初步复现
-	复现实验文章【TODO】
+- [x] 轨道态波函数初步复现 ✅ 2026-10-23
+	复现实验文章
 	找其他文章复现
 - [x] 理论的文章 fig5 补充一致性 ✅ 2026-10-22
 
 ## 2.2 2026/10/21
 - [ ] 与实验文章对应不好，可能有无序等参数没有考虑，单壳层结构和原文一致
+Localized orbitals and tunnel couplings from general confinement potentials in gate-defined quantum-dot arrays
 
 
 
