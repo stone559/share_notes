@@ -19,8 +19,30 @@
 - [ ] 
 
 
+## 2.4 2026/10/25
+- [ ] 
+- [ ] 
+-重构粒子数分布
 
+$$
+H=H_{\mathrm{tunnel}}+H_{\mathrm{interaction}}
+-\sum_i\delta_i n_i.
+$$
+在格点 i 施加化学势变化
+$$
+\delta_i\rightarrow\delta_i+d\delta_i.
+$$
+Hellmann–Feynman 定理
+$$
+dE_N=\langle\Psi_N|dH|\Psi_N\rangle.
+$$
 
+$$
+\boxed{
+\frac{\partial E_N}{\partial\delta_i}
+=-\langle n_i\rangle_N
+}
+$$
 
 
 
