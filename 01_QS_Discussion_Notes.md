@@ -20,23 +20,22 @@
 
 
 ## 2.4 2026/10/25
-- [ ] 
-- [ ] 
--重构粒子数分布
+- [ ] 粒子数变化重构测量原理
+
+系统的哈密顿量为：
 
 $$
 H=H_{\mathrm{tunnel}}+H_{\mathrm{interaction}}
 -\sum_i\delta_i n_i.
 $$
-在格点 i 施加化学势变化
+在格点 i 施加化学势变化：
 $$
 \delta_i\rightarrow\delta_i+d\delta_i.
 $$
-Hellmann–Feynman 定理
+Hellmann–Feynman 定理：
 $$
 dE_N=\langle\Psi_N|dH|\Psi_N\rangle.
 $$
-
 $$
 \boxed{
 \frac{\partial E_N}{\partial\delta_i}
@@ -44,7 +43,39 @@ $$
 }
 $$
 
+下面，考虑第 N 个电子到 N+1 电子填充：
+$$
+\begin{aligned}
+d\mu_N
+&=dE_N-dE_{N-1}\\
+&=-\langle n_i\rangle_Nd\delta_i
++\langle n_i\rangle_{N-1}d\delta_i\\
+&=-\left(
+\langle n_i\rangle_N-\langle n_i\rangle_{N-1}
+\right)d\delta_i.
+\end{aligned}
+$$
 
+于是可以通过测量微分重构出，当第 N 个电子到 N+1 电子填充时候，第 i 个格点的粒子数变化：
+$$
+\boxed{
+\frac{\partial\mu_N}{\partial\delta_i}
+=-\Delta n_i^{(N)}
+}
+$$
+所有格点的粒子数满足归一化关系：
+$$
+\sum_i\Delta n_i^{(N)}=1
+$$
+从 $N=0$ 开始测量，可以直接获得绝对占据数。
+$$
+\langle n_i\rangle_N
+=-\sum_{k=1}^N
+\frac{\partial\mu_k^*}{\partial\delta_i}
+
+$$
+下图是仿真结果，由于能级结构存在 anti-crossing，斜率在δ
+![690](file-20261025212855424.png)
 
 
 
